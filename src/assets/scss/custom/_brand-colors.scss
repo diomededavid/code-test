@@ -1,0 +1,41 @@
+$gold: #dea20b;
+$teal: #5daea5;
+$dark-teal: #325e59;
+$light-gray: #e6e6e6;
+$medium-gray: #191919;
+$dark-gray: #212121;
+$black: #000;
+$white: #fff;
+$teal-opaque: rgba( $teal, .7 );
+$dark-teal-opaque: rgba( $dark-teal, .7 );
+
+.gold {
+    background: $gold;
+}
+
+.gold-txt {
+    color: $gold;
+}
+
+.teal {
+    background: $teal;
+}
+
+.teal-txt {
+    color: $teal;
+}
+
+.medium-gray {
+    background: $medium-gray;
+}
+
+.dark-gray-background {
+    background-color: $dark-gray;
+}
+
+.dark-teal-opaque  {
+    background-color: $dark-teal-opaque;
+}
+.teal-opaque  {
+    background-color: $dark-teal-opaque;
+}

@@ -1,0 +1,16 @@
+.footer-logo {
+    max-width: 93px;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+footer p {
+    font-family: $body-font-family;
+    font-size: 1rem;
+    line-height: 22px;
+    margin-bottom: 0;
+}
+
+footer p:nth-last-child(-n+1) {
+    margin-bottom: 1.25rem;
+}
