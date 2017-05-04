@@ -5787,7 +5787,7 @@ a.thumbnail {
     max-width: 120px;
     height: auto;
     padding: 5;
-    margin: 0; }
+    margin-left: 110px; }
   .top-bar-right {
     margin-left: 30px;
     top: 100px; }
