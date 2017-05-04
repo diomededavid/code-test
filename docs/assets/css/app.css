@@ -5807,7 +5807,8 @@ a.thumbnail {
     margin-top: 6px;
     left: 0px;
     margin-left: 0;
-    min-width: 40em; } }
+    min-width: 40em;
+    top: 98px; } }
 
 hr.gradient-rule {
   border: 0;
