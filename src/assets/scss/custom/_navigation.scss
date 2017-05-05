@@ -46,7 +46,7 @@
 
 
 // Large
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
     
 .top-bar {
     margin-top: -10px;
@@ -70,7 +70,7 @@
 }
 
 // Medium
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+@media only screen and (min-width: 641px) and (max-width: 1024px) { 
     
  .top-bar {
      margin-top: -6px;
@@ -112,7 +112,7 @@
 }
 
 // Small
-@media only screen and (max-width: 40em) { 
+@media only screen and (max-width: 640px) { 
  .top-bar-right li a {
     color: $white;
     }
