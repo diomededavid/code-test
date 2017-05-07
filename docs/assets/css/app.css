@@ -5826,6 +5826,22 @@ a.thumbnail {
       padding: 0;
       margin: 0; } }
 
+.title-bar {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 225px; }
+  @media print, screen and (min-width: 40em) {
+    .title-bar {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
+  @media print, screen and (min-width: 64em) {
+    .title-bar {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
+
 hr.gradient-rule {
   border: 0;
   height: 1px;
