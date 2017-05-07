@@ -23,7 +23,7 @@
   background-color: rgba(50, 94, 89, 0.7); }
 
 .teal-opaque {
-  background-color: rgba(50, 94, 89, 0.7); }
+  background-color: rgba(93, 174, 165, 0.7); }
 
 /**
  * Foundation for Sites by ZURB
@@ -5702,7 +5702,7 @@ a.thumbnail {
   background-color: rgba(50, 94, 89, 0.7); }
 
 .teal-opaque {
-  background-color: rgba(50, 94, 89, 0.7); }
+  background-color: rgba(93, 174, 165, 0.7); }
 
 .padding-70 {
   padding-top: 30%;
@@ -5733,23 +5733,48 @@ a.thumbnail {
   width: 100%;
   z-index: 40; }
 
-.logo {
-  position: relative;
-  max-width: 183px;
-  height: auto;
-  padding: 0;
-  margin: 0; }
+@media print, screen and (min-width: 40em) {
+  .top-bar {
+    margin-top: -6px;
+    margin-left: 0;
+    margin-right: auto; } }
 
-.logo li a {
-  background: transparent; }
+@media print, screen and (min-width: 64em) {
+  .top-bar {
+    margin-top: -10px;
+    margin-left: 110px;
+    margin-right: auto; } }
 
-.top-bar-right li a {
-  color: #000;
-  font-size: 30px;
-  font-weight: 300;
-  background: rgba(50, 94, 89, 0.7);
-  padding: 20px 30px;
-  margin-right: 3px; }
+@media print, screen and (min-width: 40em) {
+  .top-bar-left {
+    margin-top: 2px;
+    margin-right: 60px;
+    top: 100px; } }
+
+@media print, screen and (min-width: 64em) {
+  .top-bar-left {
+    margin-top: 7px;
+    margin-right: 40px;
+    top: 100px; } }
+
+.top-bar-right {
+  position: absolute;
+  float: left;
+  top: 90px;
+  left: 0px;
+  margin-top: 0;
+  margin-left: 0;
+  min-width: 40em; }
+  @media print, screen and (min-width: 40em) {
+    .top-bar-right {
+      position: relative;
+      float: right;
+      top: 0;
+      margin-left: 60px; } }
+  @media print, screen and (min-width: 64em) {
+    .top-bar-right {
+      float: right;
+      margin-left: 160px; } }
 
 .top-bar-right li a.current:link, a.current:visited {
   background-color: rgba(93, 174, 165, 0.7); }
@@ -5760,56 +5785,46 @@ a.thumbnail {
 .select, .name {
   background: transparent; }
 
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {
-  .top-bar {
-    margin-top: -10px;
-    margin-right: auto;
-    margin-left: 110px; }
-  .top-bar-left {
-    margin-top: 7px;
-    margin-right: 40px;
-    top: 100px; }
-  .top-bar-right {
-    margin-left: 110px;
-    top: 100px; } }
+.top-bar-right li a {
+  color: #fff;
+  background: rgba(50, 94, 89, 0.7); }
+  @media print, screen and (min-width: 40em) {
+    .top-bar-right li a {
+      color: #000;
+      font-size: 24px;
+      font-weight: 300;
+      background: rgba(50, 94, 89, 0.7);
+      padding: 10px 15px;
+      margin-right: 3px; } }
+  @media print, screen and (min-width: 64em) {
+    .top-bar-right li a {
+      color: #000;
+      font-size: 30px;
+      font-weight: 300;
+      background: rgba(50, 94, 89, 0.7);
+      padding: 20px 30px;
+      margin-right: 3px; } }
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .top-bar {
-    margin-top: -6px;
-    margin-left: 0;
-    margin-right: auto; }
-  .top-bar-left {
-    margin-top: 2px;
-    margin-right: 60px;
-    top: 100px; }
-  .logo {
-    position: relative;
-    max-width: 120px;
-    height: auto;
-    padding: 5;
-    margin-left: 0; }
-  .top-bar-right {
-    float: right;
-    margin-left: 30px;
-    top: 100px; }
-  .top-bar-right li a {
-    color: #000;
-    font-size: 24px;
-    font-weight: 300;
-    background: rgba(50, 94, 89, 0.7);
-    padding: 10px 15px;
-    margin-right: 3px; } }
-
-@media only screen and (max-width: 40em) {
-  .top-bar-right li a {
-    color: #fff; }
-  .top-bar-right {
-    position: absolute;
-    margin-top: 6px;
-    left: 0px;
-    margin-left: 0;
-    min-width: 40em;
-    top: 98px; } }
+.logo {
+  position: relative;
+  max-width: 120px;
+  height: auto;
+  padding: 5;
+  margin-left: 0; }
+  @media print, screen and (min-width: 40em) {
+    .logo {
+      position: relative;
+      max-width: 120px;
+      height: auto;
+      padding: 5;
+      margin-left: 0; } }
+  @media print, screen and (min-width: 64em) {
+    .logo {
+      position: relative;
+      max-width: 183px;
+      height: auto;
+      padding: 0;
+      margin: 0; } }
 
 hr.gradient-rule {
   border: 0;
