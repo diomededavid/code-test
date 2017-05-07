@@ -9,27 +9,63 @@
   z-index: 40;
 }
 
-.logo {
-    position: relative;
-    max-width: 183px;
-    height: auto;
-    padding: 0;
-    margin: 0;
+.top-bar {
+    
+    @include breakpoint(medium) {
+        margin-top: -6px;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    
+    @include breakpoint(large) {
+        margin-top: -10px;
+        margin-left: 110px;
+        margin-right: auto;
+    }
+}
+  
 
+.top-bar-left {
+    
+    @include breakpoint(medium) {
+        margin-top: 2px;
+        margin-right: 60px;
+        top: 100px;
+    }
+    
+    @include breakpoint(large) {
+        margin-top: 7px;
+        margin-right: 40px;
+        top: 100px;
+    }
 }
 
-.logo li a {
-    background: transparent;
+.top-bar-right {
+
+    @include breakpoint(small) {
+        
+        position: absolute;
+        float: left;
+        top: 90px;
+        left: 0px;
+        margin-top: 0;
+        margin-left: 0;
+        min-width: 40em;
+    }
+    
+    @include breakpoint(medium) {
+        position: relative;
+        float: right;
+        top: 0;
+        margin-left: 60px;
+    }
+    
+    @include breakpoint(large) {
+        float: right;
+        margin-left: 160px;
+    }
 }
 
- .top-bar-right li a {
-    color: $black;
-    font-size: 30px;
-    font-weight: 300;
-    background: $dark-teal-opaque;
-    padding: 20px 30px;
-    margin-right: 3px;
-}
 
 .top-bar-right li a.current:link, a.current:visited {
   background-color: $teal-opaque;
@@ -44,85 +80,66 @@
    
 }
 
+.top-bar-right li a  {
 
-// Large
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    
-.top-bar {
-    margin-top: -10px;
-    margin-right: auto;
-    margin-left: 110px;
-     
-    }
- 
-.top-bar-left {
-    margin-top: 7px;
-    margin-right: 40px;
-    top: 100px;
+    @include breakpoint(small) {
+        color: $white;
+        background: $dark-teal-opaque;
     }
     
-    .top-bar-right {
-    margin-left: 110px;
-    top: 100px;
+    @include breakpoint(medium) {
+        color: $black;
+        font-size: 24px;
+        font-weight: 300;
+        background: $dark-teal-opaque;
+        padding: 10px 15px;
+        margin-right: 3px;
     }
     
-    
+    @include breakpoint(large) {
+        color: $black;
+        font-size: 30px;
+        font-weight: 300;
+        background: $dark-teal-opaque;
+        padding: 20px 30px;
+        margin-right: 3px;
+    }
 }
 
-// Medium
-@media only screen and (min-width: 641px) and (max-width: 1024px) { 
-    
- .top-bar {
-     margin-top: -6px;
-     margin-left: 0;
-     margin-right: auto;
-     
-     
- }
 
- .top-bar-left {
-    margin-top: 2px;
-    margin-right: 60px;
-    top: 100px;
+.logo  {
+    
+     @include breakpoint(small) {
+        position: relative;
+        max-width: 120px;
+        height: auto;
+        padding: 5;
+        margin-left: 0;
+    }
+   
+   
+    @include breakpoint(medium) {
+        position: relative;
+        max-width: 120px;
+        height: auto;
+        padding: 5;
+        margin-left: 0;
     }
     
-.logo {
-    position: relative;
-    max-width: 120px;
-    height: auto;
-    padding: 5;
-    margin-left: 0;
-
-}
-    
-.top-bar-right {
-    float: right;
-    margin-left: 30px;
-    top: 100px;
-}
-  .top-bar-right li a {
-    color: $black;
-    font-size: 24px;
-    font-weight: 300;
-    background: $dark-teal-opaque;
-    padding: 10px 15px;
-    margin-right: 3px;
+    @include breakpoint(large) {
+        position: relative;
+        max-width: 183px;
+        height: auto;
+        padding: 0;
+        margin: 0;
     }
-    
 }
 
-// Small
-@media only screen and (max-width: 640px) { 
- .top-bar-right li a {
-    color: $white;
-    }
-.top-bar-right {
-    position: absolute;
-    margin-top: 6px;
-    left: 0px;
-    margin-left: 0;
-    min-width: 40em;
-    top: 98px;
-    } 
-} 
+
+
+
+
+
+
+
 
