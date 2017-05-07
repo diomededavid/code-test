@@ -135,6 +135,24 @@
     }
 }
 
+.title-bar  {
+    
+    @include breakpoint(small) {
+        display: flex;
+        width: 225px;
+    }
+    
+    @include breakpoint(medium) {
+        display: flex;
+    }
+    
+    @include breakpoint(large) {
+        display: flex;
+    }
+   
+
+}
+
 
 
 
